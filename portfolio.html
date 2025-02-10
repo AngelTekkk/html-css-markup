@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML_CSS_MARKUP</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -13,137 +17,188 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo link" href="index.html"
-        >Web<span class="logo-header">Studio</span></a
-      >
-      <nav>
-        <ul>
-          <li><a class="header-link link" href="./index.html">Studio</a></li>
-          <li>
-            <a class="header-link link current" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li><a class="header-link link" href="#contacts">Kontakte</a></li>
-        </ul>
-      </nav>
-      <a class="header-contacts link" href="mailto:info@devstudio.de"
-        >info@devstudio.de</a
-      >
-      <a class="header-contacts link" href="tel:+491621234567"
-        >+49(162)-123-4567</a
-      >
-    </header>
-    <main>
-      <section class="portfolio">
-        <h1 class="title-hidden">
-          Unser Portfolio mit Beispielen von Projekten für Kunden.
-        </h1>
-        <ul>
-          <li><button class="button" type="button">Alle</button></li>
-          <li><button class="button" type="button">Webseiten</button></li>
-          <li><button class="button" type="button">Anwendungen</button></li>
-          <li><button class="button" type="button">Gestaltung</button></li>
-          <li><button class="button" type="button">Marketing</button></li>
-        </ul>
-        <ul>
-          <li>
-            <img
-              src="./images/progect-1.jpg"
-              alt="Laptop, auf dem die Website läuft"
-              width="370"
-            />
-            <h2 class="portfolio-titel">Technoquake</h2>
-            <p class="portfolio-text">Webseite</p>
-          </li>
-          <li>
-            <img
-              src="./images/progect-2.jpg"
-              alt="Ein Basketballspieler blockiert den Wurf eines anderen Basketballspielers"
-              width="370"
-            />
-            <h2 class="portfolio-titel">Plakat New Orlean gegen Golden Star</h2>
-            <p class="portfolio-text">Gestaltung</p>
-          </li>
-          <li>
-            <img
-              src="./images/progect-3.jpg"
-              alt="Restaurant-Emblem über dem Fischbild"
-              width="370"
-            />
-            <h2 class="portfolio-titel">Restaurant Seafood</h2>
-            <p class="portfolio-text">Anwendung</p>
-          </li>
-          <li>
-            <img src="./images/progect-4.jpg" alt="Kopfhörer" width="370" />
-            <h2 class="portfolio-titel">Projekt Prime</h2>
-            <p class="portfolio-text">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/progect-5.jpg" alt="Zwei Kisten" width="370" />
-            <h2 class="portfolio-titel">Projekt Boxes</h2>
-            <p class="portfolio-text">Anwendung</p>
-          </li>
-          <li>
-            <img
-              src="./images/progect-6.jpg"
-              alt="iMac mit laufender Webseite"
-              width="370"
-            />
-            <h2 class="portfolio-titel">Inspiration has no Borders</h2>
-            <p class="portfolio-text">Webseite</p>
-          </li>
-          <li>
-            <img src="./images/progect-7.jpg" alt="Offenes Buch" width="370" />
-            <h2 class="portfolio-titel">Limitierte Auflage</h2>
-            <p class="portfolio-text">Gestaltung</p>
-          </li>
-          <li>
-            <img
-              src="./images/progect-8.jpg"
-              alt="Schild mit Firmenlogo"
-              width="370"
-            />
-            <h2 class="portfolio-titel">Projekt LAB</h2>
-            <p class="portfolio-text">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/progect-9.jpg"
-              alt="Ein Mann arbeitet an einem Laptop-Computer"
-              width="370"
-            />
-            <h2 class="portfolio-titel">Growing Business</h2>
-            <p class="portfolio-text">Anwendung</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <a class="logo link" href="index.html"
-        >Web<span class="logo-footer">Studio</span></a
-      >
-      <address id="contacts">
-        <ul>
-          <li>
-            <a
-              class="footer-adress link"
-              href="https://maps.app.goo.gl/n8VEDq48sJDnkQV29"
-              >Brehmpl. 1, 86161 Augsburg</a
-            >
-          </li>
-          <li>
-            <a class="footer-contacts link" href="mailto:info@devstudio.de"
+      <div class="container">
+        <a class="logo link" href="index.html"
+          >Web<span class="logo-header">Studio</span></a
+        >
+        <nav class="header-nav">
+          <ul class="list">
+            <li class="item">
+              <a class="header-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="item">
+              <a class="header-link link current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="item">
+              <a class="header-link link" href="#contacts">Kontakte</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="item">
+            <a class="header-contacts link" href="mailto:info@devstudio.de"
               >info@devstudio.de</a
             >
           </li>
-          <li>
-            <a class="footer-contacts link" href="tel:+491621234567"
+          <li class="item">
+            <a class="header-contacts link" href="tel:+491621234567"
               >+49(162)-123-4567</a
             >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="title-hidden">
+            Unser Portfolio mit Beispielen von Projekten für Kunden.
+          </h1>
+          <ul class="portfolio-filter">
+            <li class="item">
+              <button class="button current" type="button">Alle</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Webseiten</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Anwendungen</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Gestaltung</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="portfolio-examples">
+            <li class="item">
+              <img
+                src="./images/progect-1.jpg"
+                alt="Laptop, auf dem die Website läuft"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">Technoquake</h2>
+                <p class="portfolio-text">Webseite</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./images/progect-2.jpg"
+                alt="Ein Basketballspieler blockiert den Wurf eines anderen Basketballspielers"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">
+                  Plakat New Orlean vs Golden Star
+                </h2>
+                <p class="portfolio-text">Gestaltung</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./images/progect-3.jpg"
+                alt="Restaurant-Emblem über dem Fischbild"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">Restaurant Seafood</h2>
+                <p class="portfolio-text">Anwendung</p>
+              </div>
+            </li>
+            <li class="item">
+              <img src="./images/progect-4.jpg" alt="Kopfhörer" width="370" />
+              <div class="card">
+                <h2 class="portfolio-titel">Projekt Prime</h2>
+                <p class="portfolio-text">Marketing</p>
+              </div>
+            </li>
+            <li class="item">
+              <img src="./images/progect-5.jpg" alt="Zwei Kisten" width="370" />
+              <div class="card">
+                <h2 class="portfolio-titel">Projekt Boxes</h2>
+                <p class="portfolio-text">Anwendung</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./images/progect-6.jpg"
+                alt="iMac mit laufender Webseite"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">Inspiration has no Borders</h2>
+                <p class="portfolio-text">Webseite</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./images/progect-7.jpg"
+                alt="Offenes Buch"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">Limitierte Auflage</h2>
+                <p class="portfolio-text">Gestaltung</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./images/progect-8.jpg"
+                alt="Schild mit Firmenlogo"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">Projekt LAB</h2>
+                <p class="portfolio-text">Marketing</p>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                src="./images/progect-9.jpg"
+                alt="Ein Mann arbeitet an einem Laptop-Computer"
+                width="370"
+              />
+              <div class="card">
+                <h2 class="portfolio-titel">Growing Business</h2>
+                <p class="portfolio-text">Anwendung</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo link" href="index.html"
+          >Web<span class="logo-footer">Studio</span></a
+        >
+        <address id="contacts" class="ft-adress">
+          <ul class="footer-list">
+            <li class="item">
+              <a
+                class="footer-adress link"
+                href="https://maps.app.goo.gl/n8VEDq48sJDnkQV29"
+                target="_blank"
+                >Brehmpl. 1, 86161 Augsburg</a
+              >
+            </li>
+            <li class="item">
+              <a class="footer-contacts link" href="mailto:info@devstudio.de"
+                >info@devstudio.de</a
+              >
+            </li>
+            <li class="item">
+              <a class="footer-contacts link" href="tel:+491621234567"
+                >+49(162)-123-4567</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
